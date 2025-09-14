@@ -17,7 +17,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
         //.setAllowedOrigins - allows req from this url (CORS)
         //.withSockJS() - fallback option for clients that don't support native WebSockets
         registry.addEndpoint("/chat")
-                .setAllowedOrigins("http://localhost:5173")
+                .setAllowedOrigins("http://localhost:8080")
                 .withSockJS();
     }
 
